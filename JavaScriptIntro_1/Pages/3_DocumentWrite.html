@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+        //JavaScript ile bir sayfanın icerigini komple degiştirebilirsiniz
+
+        //document.write() fonksiyonu kullanılarak bir sayfadaki tasarım kodları tamamen degiştirilebilir
+
+        //document.write() ilk kullanıldıgı zaman yepyeni bir döküman acılır ve tasarım kodları onun üzerinden gerceklesir..Lakin sonra devam ettiginizde document.write yeni bir döküman acmaktansa varolan döküman üzerine append eder(ekleme yapar)...Eger bunu istemiyorsanız tekrar yeni bir döküman istiyorsanız o zaman document.open() ifadesini kullanmalısınız
+
+        //Fonksiyonun sundugu tasarıma bir horizontal row ve yeni bir button ekleyerek degiştirin...BU yeni butona tıklandıgında döküman yeniden degişsin ve karsıma <h1> baslıgında Yeniden Degiştirildi yazısı getirsin
+        function IcerigiDegistir() {
+            document.write(" <table border='1'> <thead> <tr> <th> Isim </th> <th> SoyIsim </th> </tr>  </thead> <tbody> <tr> <td> Anthony </td> <td> Hopkins </td> </tr> <tr> <td>Cristopher </td> <td>  Lee </td> </tr> </tbody> </table> <hr/> <button onclick='YenidenDegistir()'> Yeniden Degistir </button> ");
+        }
+
+
+        function YenidenDegistir() {
+            document.open();
+            document.write("<h1> Yeniden Degiştildi </h1>")
+        }
+
+
+    </script>
+</head>
+<body>
+
+
+    <p>Bu orijinal tasarım!!!</p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Isim</th>
+                <th>SoyIsim</th>
+                <th>Sirket</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Halit</td>
+                <td>Yılmaz</td>
+                <td>IdeaSoft</td>
+            </tr>
+
+            <tr>
+                <td>Fatih</td>
+                <td>Günalp</td>
+                <td>Softbreak</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <hr />
+
+    <button onclick="IcerigiDegistir()">
+        Degiştir
+    </button>
+
+
+
+
+
+
+   
+
+</body>
+
+
+
+
+</html>

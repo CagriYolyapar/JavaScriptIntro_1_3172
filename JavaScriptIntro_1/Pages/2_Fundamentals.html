@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+    <script>
+
+        //Burası yorum satırıdır
+
+        /*
+        
+            JavaScript fonksiyonel bir dildir...JavaScript'te degişkenlerin tipleri hep var veya let olarak yazılır. Dynamically typed bir dildir...
+
+            JavaScript fonksiyonlarınızın geriye dönüş tipleri belirtilemez...
+
+            JavaScript'te ifadelerinizin sonuna noktalı virgül koymak zorunda degilsiniz; fakat koydugunuz takdirde daha hızlı render edilmesini saglarsınız...
+
+            JavaScript'te metinsel ifadeler dilerseniz tek, dilerseniz cift tırnak arasına yazılabilir...
+        
+        
+        
+        */
+
+
+        function Selamla() {
+            alert("Hello World");
+        }
+
+
+        function Sor() {
+            //confirm fonksiyonunuz size yes ve no buttonu olan bir mesaj kutusu cıkarır...
+
+            var result = confirm("Silmek istediginize emin misiniz?");
+
+            if (result) {
+                alert("Silme işlemi onaylandı");
+            }
+            else {
+                alert("İşlem iptal edildi");
+            }
+        }
+
+
+        //let ile olusturulmus olan degişkenler sadece tanımlandıkları alanda calısır (local alanda tanımlandıysa sadece o alanda calısabilir)
+
+        //var ile olusturulmus olan degişkenler her düzleme ulasabilir...Sadece degerleri atanmamıssa(sonradan tanımlanmıslarsa) undefined olarak gecerler
+
+        //var veya let kullanmadan degişken olusturabilirsiniz...Bu sekilde degişken olusturursanız local alanda olsa bile var gibi davranır...Lakin eger bu şekilde bir tanımlamayı kullanımdan sonra yaparsanız referans bile görülemeyecektir...
+
+        //Eger kullanımdan sonra (alert gibi fonksiyonlarda kullanım durumundan sonra) let ile ilgili degişkeni acarsanız cannot access hatası alırsınız...
+
+        function Deneme() {
+
+          
+            //{
+            //   var b = 2;
+            //}
+
+            //alert(b);
+
+
+            //var a;
+
+            //alert(a);
+
+
+            //a undefined
+            //alert(a);
+
+            //var a = 2;
+
+
+            //a reference error
+            //alert(a);
+            //a = 2;
+
+
+            //a reference error
+            //alert(a);
+            //let a = 2;
+
+           
+            
+
+
+        }
+
+
+    </script>
+
+    
+
+</head>
+<body>
+
+    <input type="button" value="Tıklayınız" onclick="Selamla()" />
+
+
+    <button onclick="Sor()">
+        Sor
+    </button>
+
+    <hr />
+
+
+    <input type="button" value="Simulasyon" onclick="Deneme()" />
+ 
+
+</body>
+</html>

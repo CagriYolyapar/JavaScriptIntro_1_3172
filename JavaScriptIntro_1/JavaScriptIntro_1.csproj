@@ -68,6 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pages\0_JSIntro.html" />
+    <Content Include="Pages\2_Fundamentals.html" />
+    <Content Include="Pages\3_DocumentWrite.html" />
+    <Content Include="Pages\4_GetElements.html" />
+    <Content Include="Pages\5_Attribute.html" />
+    <Content Include="Pictures\Empty.png" />
+    <Content Include="Pictures\Full.png" />
+    <Content Include="Scripts\MyScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
